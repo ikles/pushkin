@@ -53,6 +53,10 @@ ul {
   font-family: UniSansHeavyCAPS;
   src: url(../fonts/unicaps.otf); }
 
+@font-face {
+  font-family: PTSans;
+  src: url(../fonts/pt-sans.ttf); }
+
 .toggle-mnu {
   display: block;
   float: right;
@@ -497,11 +501,36 @@ b, strong {
     .bot-mnu1 a:hover {
       text-decoration: none; }
 
+.bot-mnu2 ul {
+  height: 85px;
+  display: block; }
+
 .bot-mnu2 h2 {
   color: white;
   font-family: UniSansHeavyCAPS;
   font-size: 34px;
   margin-bottom: 23px; }
+
+.bot-mnu2 li {
+  font-family: PTSans;
+  width: 235px;
+  float: left;
+  margin-bottom: 5px;
+  font-size: 17px;
+  margin-right: 40px; }
+
+.bot-mnu2 a {
+  color: #FFF;
+  text-decoration: underline; }
+
+.footer2 {
+  width: 961px;
+  margin: auto;
+  opacity: 0.64;
+  border: 3px solid black;
+  -webkit-border-radius: 20px 20px 0 0;
+          border-radius: 20px 20px 0 0;
+  border-bottom: none; }
 
 .copy {
   font-size: 12px; }
