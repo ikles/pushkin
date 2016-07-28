@@ -1,5 +1,3 @@
-@import _mnu
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
   margin: 0
   padding: 0
@@ -49,18 +47,21 @@ ul
 	margin: 0
 
 @import _fonts
+@import _mnu
 
 .wrapper 
 	width: 100%
+	max-width: 1600px
 	margin: auto
 	overflow: hidden
 	background-color: #fbfbfb 
 
 .w_1200
-	max-width: 1200px
+	max-width: 1024px
 	width: 100%
 	margin: auto
 	//overflow: hidden
+	padding: 0 31px
 	box-sizing: border-box
 
 b, strong 
@@ -73,7 +74,7 @@ b, strong
 	height: 90px
 
 .logo 
-	margin-top: 27px
+	margin-top: 20px
 	display: block
 
 .col-mnu 
@@ -89,7 +90,7 @@ b, strong
 	z-index: 0
 
 .menu_wrap 
-	background-color: #293641
+	//background-color: #293641
 	width: 100%
 	overflow: hidden
 
@@ -296,6 +297,9 @@ b, strong
   
 .top_slider_wrap
 	margin-bottom: 30px
+	width: 100%
+	min-height: 209px
+	background: url('../img/top_bg.png') no-repeat top center
 
 .slides
   height: 100% 

@@ -1,65 +1,4 @@
 @charset "UTF-8";
-.toggle-mnu {
-  display: block;
-  float: right;
-  position: absolute;
-  right: 0;
-  top: 0;
-  text-align: center;
-  line-height: 48px; }
-
-.toggle-mnu {
-  display: block;
-  width: 28px;
-  height: 28px;
-  margin: 40px 15px; }
-  .toggle-mnu:focus {
-    outline: none; }
-
-.toggle-mnu span:after,
-.toggle-mnu span:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -9px; }
-
-.toggle-mnu span:after {
-  top: 9px; }
-
-.toggle-mnu span {
-  position: relative;
-  display: block; }
-
-.toggle-mnu span,
-.toggle-mnu span:after,
-.toggle-mnu span:before {
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-border-radius: 2px;
-          border-radius: 2px; }
-
-.toggle-mnu.on span {
-  background-color: transparent; }
-
-.toggle-mnu.on span:before {
-  -webkit-transform: rotate(45deg) translate(5px, 5px);
-      -ms-transform: rotate(45deg) translate(5px, 5px);
-          transform: rotate(45deg) translate(5px, 5px); }
-
-.toggle-mnu.on span:after {
-  -webkit-transform: rotate(-45deg) translate(7px, -8px);
-      -ms-transform: rotate(-45deg) translate(7px, -8px);
-          transform: rotate(-45deg) translate(7px, -8px); }
-
-.toggle-mnu.on + #menu {
-  opacity: 1;
-  visibility: visible; }
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -138,16 +77,79 @@ ul {
   font-family: MuseoSansCyrl300I;
   src: url(../fonts/MuseoSansCyrl_300_Italic.otf); }
 
+.toggle-mnu {
+  display: block;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: center;
+  line-height: 48px; }
+
+.toggle-mnu {
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 40px 15px; }
+  .toggle-mnu:focus {
+    outline: none; }
+
+.toggle-mnu span:after,
+.toggle-mnu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px; }
+
+.toggle-mnu span:after {
+  top: 9px; }
+
+.toggle-mnu span {
+  position: relative;
+  display: block; }
+
+.toggle-mnu span,
+.toggle-mnu span:after,
+.toggle-mnu span:before {
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+.toggle-mnu.on span {
+  background-color: transparent; }
+
+.toggle-mnu.on span:before {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+      -ms-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px); }
+
+.toggle-mnu.on span:after {
+  -webkit-transform: rotate(-45deg) translate(7px, -8px);
+      -ms-transform: rotate(-45deg) translate(7px, -8px);
+          transform: rotate(-45deg) translate(7px, -8px); }
+
+.toggle-mnu.on + #menu {
+  opacity: 1;
+  visibility: visible; }
+
 .wrapper {
   width: 100%;
+  max-width: 1600px;
   margin: auto;
   overflow: hidden;
   background-color: #fbfbfb; }
 
 .w_1200 {
-  max-width: 1200px;
+  max-width: 1024px;
   width: 100%;
   margin: auto;
+  padding: 0 31px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -161,7 +163,7 @@ b, strong {
   height: 90px; }
 
 .logo {
-  margin-top: 27px;
+  margin-top: 20px;
   display: block; }
 
 .col-mnu {
@@ -178,7 +180,6 @@ b, strong {
   z-index: 0; }
 
 .menu_wrap {
-  background-color: #293641;
   width: 100%;
   overflow: hidden; }
 
@@ -385,7 +386,10 @@ b, strong {
   overflow: hidden; }
 
 .top_slider_wrap {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  width: 100%;
+  min-height: 209px;
+  background: url("../img/top_bg.png") no-repeat top center; }
 
 .slides {
   height: 100%;
