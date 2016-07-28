@@ -16,6 +16,7 @@ body
   line-height: 1
   color: black
   background: white
+  font-family: Oranienbaum
 
 ol, ul
   list-style: none
@@ -65,7 +66,7 @@ ul
 	box-sizing: border-box
 
 b, strong 
-	font-family: MuseoSansCyrl700
+	font-weight: bold 
 
 .top
 	position: relative
@@ -79,7 +80,8 @@ b, strong
 
 .col-mnu 
 	box-sizing: border-box
-
+	margin-top: 25px
+	
 .gray_line 
 	position: absolute
 	right: 0
@@ -94,43 +96,40 @@ b, strong
 	width: 100%
 	overflow: hidden
 
-
 .top_mnu
-	float: left
-	position: relative
-	z-index: 1
+	margin-bottom: 5px
 	ul
-		display: block
-		text-align: center 
-		margin: 0
-	li 
+	li
 		float: left
-		list-style: none
-		line-height: 1
-		margin: 0
-		
-	a 		
-		font-family: MuseoSansCyrl100
-		font-size: 16px	
-		color: rgb(176, 197, 213)
-		color: #FFF
-		padding: 13px 47px
+		&:before
+			display: block		 
+			float: right
+			width: 2px
+			height: 71px
+			background-color: #c7c7c7
+			content: ""  
+			border-right: 1px solid #888888
+		&:first-child 
+			a
+				padding-left: 0
+	a
 		display: block
+		height: 71px
+		font-size: 20px
+		color: #000
+		line-height: 3.5
+		padding: 0 17px
 		box-sizing: border-box
-		background-image: url("../img/line.png")
-		background-repeat: no-repeat
-		background-position: right center  
-		&:hover
-			color: rgb(176, 197, 213)
-			text-decoration: none
-			background-color: #324D63 
-			background-image: none 
+		&:hover 
+			text-decoration: underline
+		
+		
+//c7c7c7
+//888888
+//71px
 			
 .active a 
-	color: rgb(176, 197, 213)
-	text-decoration: none
-	background-color: #324D63 
-	background-image: none 
+	 
 
 .herbs 
 	width: 50%
@@ -150,10 +149,18 @@ b, strong
 	width: 50%
 
 .top_phone
+	font-size: 17px
+	span
+		font-size: 39px
+		display: block
+		margin-top: 5px
 	
 	
 .top_mail
-
+	font-size: 25px
+	margin-top: 2px
+	a
+		color: #000 
 		
 .nopadding 
 	padding: 0 !important
@@ -173,7 +180,6 @@ b, strong
 	padding-top: 5px
 	.like_h2 
 		color: white
-		font-family: MuseoSansCyrl900
 		font-size: 24px
 		margin-bottom: 12px
 		margin-top: 0
@@ -196,14 +202,12 @@ b, strong
 	left: 70px
 	li
 		color: white
-		font-family: MuseoSansCyrl300
 		font-size: 16px
 		margin-bottom: 0px
 		line-height: 1
 		&:before 
 			content: "— " 
 			color: white
-			font-family: MuseoSansCyrl700
 			font-size: 25px
 			margin-right: 10px
 
@@ -219,20 +223,17 @@ b, strong
 	top: 40px
 	color: rgb(47, 47, 47)
 	font-size: 24px
-	font-family: MuseoSansCyrl300
 	line-height: 1
 	width: 360px
 	p 
 		line-height: 1.3
 	
 	.like_h2 
-		font-family: MuseoSansCyrl300
 		color: rgb(47, 47, 47)
 		font-size: 30px
 		line-height: 1
 		margin-bottom: 18px
 	span
-		font-family: MuseoSansCyrl700
 		color: rgb(255, 253, 38)
 		font-size: 36px
 
@@ -245,11 +246,9 @@ b, strong
 	position: absolute
 	left: 40px
 	top: 35px
-	font-family: MuseoSansCyrl300
 	font-size: 30px
 	color: rgb(47, 47, 47)
 	span
-		font-family: MuseoSansCyrl500
 		color: rgb(255, 253, 38)
 
 .order
@@ -257,7 +256,6 @@ b, strong
 	height: 48px
 	background-color: rgb(255, 253, 38)
 	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl100
 	font-size: 18px
 	display: block
 	box-sizing: border-box
@@ -307,7 +305,6 @@ b, strong
   opacity: 0.3
   text-decoration: none
   color: #FFF
-  font-family: Verdana
   border-radius: 3px
   &:hover
     opacity: 0.5
@@ -367,13 +364,11 @@ b, strong
 	padding-bottom: 10px
 	.like_h2
 		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl100
 		font-size: 30px
 		margin-bottom: 22px
 	li 
 	a 
 		color: #000
-		font-family: MuseoSansCyrl100
 		font-size: 15px
 		line-height: 30px
 		box-sizing: border-box
@@ -392,7 +387,6 @@ b, strong
 	float: right
 	width: 870px
 	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl100
 	font-size: 15px
 	line-height: 21px
 	p 
@@ -405,20 +399,17 @@ b, strong
 	
 h1 
 	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl100
 	font-size: 36px
 	margin-bottom: 22px
 	line-height: 1
 
 h2
 	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl100
 	font-size: 30px
 	margin-bottom: 20px
 
 h3
 	color: rgb(47, 47, 47)
-	font-family: MuseoSansCyrl100
 	font-size: 24px
 	margin-bottom: 20px
 
@@ -429,7 +420,6 @@ h3
 	margin-bottom: 25px
 	overflow: hidden
 	color: #fff
-	font-family: MuseoSansCyrl300
 	font-size: 15px
 	img 
 
@@ -465,7 +455,6 @@ h3
 	border: 1px solid #DDDFE0 
 	border-bottom: none
 	td 
-		font-family: MuseoSansCyrl100
 		padding: 10px 15px
 		box-sizing: border-box
 		vertical-align: middle
@@ -478,24 +467,20 @@ h3
 	tr 
 		&:first-child 
 			color: rgb(119, 127, 140)
-			font-family: MuseoSansCyrl500
 			font-size: 15px
 			border-radius: 4px
 			td 
 				padding: 15px		
-				font-family: MuseoSansCyrl500
 
 	td 
 		padding: 10px 15px
 		font-size: 15px
 		line-height: 1
-		font-family: MuseoSansCyrl100
 		&:first-child 
 			
 	tbody 
 		tr 
 			color: rgb(47, 47, 47)
-			font-family: MuseoSansCyrl500
 			font-size: 15px
 		td 
 			&:nth-child(2n-1) 
@@ -513,7 +498,6 @@ h3
 	margin-top: 45px
 	.like_h3 
 		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl100
 		font-size: 30px
 		margin-bottom: 30px
 
@@ -522,7 +506,6 @@ h3
 		float: left
 		margin-bottom: 25px
 		color: black
-		font-family: MuseoSansCyrl100
 		font-size: 15px
 		text-decoration: underline
 		padding-left: 30px
@@ -540,7 +523,6 @@ h3
 		border-radius: 40px
 		background-image: none
 		padding-left: 0
-		font-family: MuseoSansCyrl100
 		font-size: 18px
 		padding: 11px 0
 		text-decoration: none
@@ -558,7 +540,6 @@ h3
 	.like_h3 
 		color: #000
 		background-color: #FFFD26 
-		font-family: MuseoSansCyrl100
 		position: absolute
 		top: 0
 		left: 0
@@ -577,7 +558,6 @@ h3
 		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.26)
 		box-sizing: border-box
 		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl100
 		font-size: 15px
 		padding: 0 15px
 		margin-bottom: 20px
@@ -591,7 +571,6 @@ h3
 		box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.26)
 		box-sizing: border-box
 		color: rgb(47, 47, 47)
-		font-family: MuseoSansCyrl100
 		font-size: 15px
 		padding: 15px
 		margin-bottom: 20px
@@ -603,8 +582,7 @@ h3
 		border: 1px solid rgb(235, 234, 18)
 		box-shadow: 0 1px 0 rgb(225, 191, 19), inset 0 0 4px rgba(255, 255, 255, 0.75)
 		border-radius: 40px 
-		font-size: 18px
-		font-family: MuseoSansCyrl100
+		font-size: 18px		
 		color: rgb(47, 47, 47)
 
 .left_widget_vk 
@@ -619,11 +597,9 @@ h3
 	border-top: 1px solid #AFB9C1 
 
 .copy
-	font-family: MuseoSansCyrl300
 	font-size: 12px
 	
 .footer_adress
-	font-family: MuseoSansCyrl100
 	font-size: 12px
 	margin-left: 45px
 	padding-left: 20px
@@ -633,19 +609,16 @@ h3
 	overflow: hidden
 
 .footer_phone 
-	font-family: MuseoSansCyrl100
 	font-size: 18px
 	padding-left: 20px
 	margin-left: 100px
 	background: url("../img/top_icon_phone.png") no-repeat left center
 	span
 		font-size: 12px
-		font-family: MuseoSansCyrl500
 
 .footer_mail
 	a
 		color: rgb(50, 77, 99)
-		font-family: MuseoSansCyrl100
 		font-size: 14px
 		text-decoration: underline
 		padding-left: 20px
@@ -662,7 +635,6 @@ h3
 		li 
 			float: left
 			font-size: 14px
-			font-family: MuseoSansCyrl100
 			margin-bottom: 10px
 			margin: 0
 			padding: 0
@@ -681,7 +653,6 @@ h3
 				&:after 
 					line-height: 1
 					font-size: 14px
-					font-family: MuseoSansCyrl100
 					content: "/"
 					color: #000 
 					float: right
@@ -708,7 +679,6 @@ h3
 				content: counter(num) ' '
 				counter-increment: num
 				color: rgb(255, 253, 38)
-				font-family: MuseoSansCyrl900
 				font-size: 14px			
 				width: 21px
 				height: 21px
@@ -734,7 +704,6 @@ h3
 blockquote
 	background-color: #70b9e6 
 	color: #000
-	font-family: MuseoSansCyrl100
 	font-size: 15px
 	line-height: 21px
 	padding: 12px 25px
@@ -750,7 +719,6 @@ blockquote
     background-image: url("../img/left_quote.png") 
 	b 
 		color: #fff
-		font-family: MuseoSansCyrl100
 		font-size: 15px
 	&:after
   	margin-bottom: 15px
@@ -788,7 +756,6 @@ blockquote
 	box-sizing: border-box 
 	a
 		color: rgb(54, 166, 207)
-		font-family: MuseoSansCyrl700
 		font-size: 14px
 		text-decoration: underline
 		margin-right: 30px

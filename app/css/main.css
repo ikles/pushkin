@@ -16,7 +16,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
   line-height: 1;
   color: black;
-  background: white; }
+  background: white;
+  font-family: Oranienbaum; }
 
 ol, ul {
   list-style: none; }
@@ -46,36 +47,8 @@ ul {
   margin: 0; }
 
 @font-face {
-  font-family: MuseoSansCyrl100;
-  src: url(../fonts/MuseoSansCyrl_100.otf); }
-
-@font-face {
-  font-family: MuseoSansCyrl900I;
-  src: url(../fonts/MuseoSansCyrl_900_Italic.otf); }
-
-@font-face {
-  font-family: MuseoSansCyrl900;
-  src: url(../fonts/MuseoSansCyrl_900.otf); }
-
-@font-face {
-  font-family: MuseoSansCyrl700;
-  src: url(../fonts/MuseoSansCyrl_700.otf); }
-
-@font-face {
-  font-family: MuseoSansCyrl500;
-  src: url(../fonts/MuseoSansCyrl_500.otf); }
-
-@font-face {
-  font-family: MuseoSansCyrl300;
-  src: url(../fonts/MuseoSansCyrl_300.otf); }
-
-@font-face {
-  font-family: MuseoSansCyrl700I;
-  src: url(../fonts/MuseoSansCyrl_700_Italic.otf); }
-
-@font-face {
-  font-family: MuseoSansCyrl300I;
-  src: url(../fonts/MuseoSansCyrl_300_Italic.otf); }
+  font-family: Oranienbaum;
+  src: url(../fonts/oranienbaum.ttf); }
 
 .toggle-mnu {
   display: block;
@@ -154,7 +127,7 @@ ul {
           box-sizing: border-box; }
 
 b, strong {
-  font-family: MuseoSansCyrl700; }
+  font-weight: bold; }
 
 .top {
   position: relative; }
@@ -168,7 +141,8 @@ b, strong {
 
 .col-mnu {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  margin-top: 25px; }
 
 .gray_line {
   position: absolute;
@@ -184,41 +158,30 @@ b, strong {
   overflow: hidden; }
 
 .top_mnu {
-  float: left;
-  position: relative;
-  z-index: 1; }
-  .top_mnu ul {
-    display: block;
-    text-align: center;
-    margin: 0; }
+  margin-bottom: 5px; }
   .top_mnu li {
-    float: left;
-    list-style: none;
-    line-height: 1;
-    margin: 0; }
+    float: left; }
+    .top_mnu li:before {
+      display: block;
+      float: right;
+      width: 2px;
+      height: 71px;
+      background-color: #c7c7c7;
+      content: "";
+      border-right: 1px solid #888888; }
+    .top_mnu li:first-child a {
+      padding-left: 0; }
   .top_mnu a {
-    font-family: MuseoSansCyrl100;
-    font-size: 16px;
-    color: #b0c5d5;
-    color: #FFF;
-    padding: 13px 47px;
     display: block;
+    height: 71px;
+    font-size: 20px;
+    color: #000;
+    line-height: 3.5;
+    padding: 0 17px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    background-image: url("../img/line.png");
-    background-repeat: no-repeat;
-    background-position: right center; }
+            box-sizing: border-box; }
     .top_mnu a:hover {
-      color: #b0c5d5;
-      text-decoration: none;
-      background-color: #324D63;
-      background-image: none; }
-
-.active a {
-  color: #b0c5d5;
-  text-decoration: none;
-  background-color: #324D63;
-  background-image: none; }
+      text-decoration: underline; }
 
 .herbs {
   width: 50%;
@@ -235,6 +198,19 @@ b, strong {
 .top_contacts {
   float: left;
   width: 50%; }
+
+.top_phone {
+  font-size: 17px; }
+  .top_phone span {
+    font-size: 39px;
+    display: block;
+    margin-top: 5px; }
+
+.top_mail {
+  font-size: 25px;
+  margin-top: 2px; }
+  .top_mail a {
+    color: #000; }
 
 .nopadding {
   padding: 0 !important; }
@@ -254,7 +230,6 @@ b, strong {
   padding-top: 5px; }
   .slider_wrap .like_h2 {
     color: white;
-    font-family: MuseoSansCyrl900;
     font-size: 24px;
     margin-bottom: 12px;
     margin-top: 0; }
@@ -275,14 +250,12 @@ b, strong {
   left: 70px; }
   .slider_text li {
     color: white;
-    font-family: MuseoSansCyrl300;
     font-size: 16px;
     margin-bottom: 0px;
     line-height: 1; }
     .slider_text li:before {
       content: "— ";
       color: white;
-      font-family: MuseoSansCyrl700;
       font-size: 25px;
       margin-right: 10px; }
 
@@ -299,19 +272,16 @@ b, strong {
   top: 40px;
   color: #2f2f2f;
   font-size: 24px;
-  font-family: MuseoSansCyrl300;
   line-height: 1;
   width: 360px; }
   .content_banner_text p {
     line-height: 1.3; }
   .content_banner_text .like_h2 {
-    font-family: MuseoSansCyrl300;
     color: #2f2f2f;
     font-size: 30px;
     line-height: 1;
     margin-bottom: 18px; }
   .content_banner_text span {
-    font-family: MuseoSansCyrl700;
     color: #fffd26;
     font-size: 36px; }
 
@@ -325,11 +295,9 @@ b, strong {
   position: absolute;
   left: 40px;
   top: 35px;
-  font-family: MuseoSansCyrl300;
   font-size: 30px;
   color: #2f2f2f; }
   .min_banner_text span {
-    font-family: MuseoSansCyrl500;
     color: #fffd26; }
 
 .order {
@@ -337,7 +305,6 @@ b, strong {
   height: 48px;
   background-color: #fffd26;
   color: #2f2f2f;
-  font-family: MuseoSansCyrl100;
   font-size: 18px;
   display: block;
   -webkit-box-sizing: border-box;
@@ -390,7 +357,6 @@ b, strong {
   opacity: 0.3;
   text-decoration: none;
   color: #FFF;
-  font-family: Verdana;
   -webkit-border-radius: 3px;
           border-radius: 3px; }
   .slider-arrow:hover {
@@ -451,12 +417,10 @@ b, strong {
   padding-bottom: 10px; }
   .left_mnu .like_h2 {
     color: #2f2f2f;
-    font-family: MuseoSansCyrl100;
     font-size: 30px;
     margin-bottom: 22px; }
   .left_mnu a {
     color: #000;
-    font-family: MuseoSansCyrl100;
     font-size: 15px;
     line-height: 30px;
     -webkit-box-sizing: border-box;
@@ -476,7 +440,6 @@ b, strong {
   float: right;
   width: 870px;
   color: #2f2f2f;
-  font-family: MuseoSansCyrl100;
   font-size: 15px;
   line-height: 21px; }
   .content p {
@@ -489,20 +452,17 @@ b, strong {
 
 h1 {
   color: #2f2f2f;
-  font-family: MuseoSansCyrl100;
   font-size: 36px;
   margin-bottom: 22px;
   line-height: 1; }
 
 h2 {
   color: #2f2f2f;
-  font-family: MuseoSansCyrl100;
   font-size: 30px;
   margin-bottom: 20px; }
 
 h3 {
   color: #2f2f2f;
-  font-family: MuseoSansCyrl100;
   font-size: 24px;
   margin-bottom: 20px; }
 
@@ -514,7 +474,6 @@ h3 {
   margin-bottom: 25px;
   overflow: hidden;
   color: #fff;
-  font-family: MuseoSansCyrl300;
   font-size: 15px; }
 
 .img_block_img {
@@ -549,7 +508,6 @@ h3 {
   border: 1px solid #DDDFE0;
   border-bottom: none; }
   .price_table td {
-    font-family: MuseoSansCyrl100;
     padding: 10px 15px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -562,21 +520,17 @@ h3 {
       border-left: 1px solid #DDDFE0; }
   .price_table tr:first-child {
     color: #777f8c;
-    font-family: MuseoSansCyrl500;
     font-size: 15px;
     -webkit-border-radius: 4px;
             border-radius: 4px; }
     .price_table tr:first-child td {
-      padding: 15px;
-      font-family: MuseoSansCyrl500; }
+      padding: 15px; }
   .price_table td {
     padding: 10px 15px;
     font-size: 15px;
-    line-height: 1;
-    font-family: MuseoSansCyrl100; }
+    line-height: 1; }
   .price_table tbody tr {
     color: #2f2f2f;
-    font-family: MuseoSansCyrl500;
     font-size: 15px; }
   .price_table tbody td:nth-child(2n-1) {
     width: 50%; }
@@ -592,7 +546,6 @@ h3 {
   margin-top: 45px; }
   .last_news .like_h3 {
     color: #2f2f2f;
-    font-family: MuseoSansCyrl100;
     font-size: 30px;
     margin-bottom: 30px; }
   .last_news a {
@@ -600,7 +553,6 @@ h3 {
     float: left;
     margin-bottom: 25px;
     color: black;
-    font-family: MuseoSansCyrl100;
     font-size: 15px;
     text-decoration: underline;
     padding-left: 30px;
@@ -619,7 +571,6 @@ h3 {
             border-radius: 40px;
     background-image: none;
     padding-left: 0;
-    font-family: MuseoSansCyrl100;
     font-size: 18px;
     padding: 11px 0;
     text-decoration: none; }
@@ -639,7 +590,6 @@ h3 {
   .left_form .like_h3 {
     color: #000;
     background-color: #FFFD26;
-    font-family: MuseoSansCyrl100;
     position: absolute;
     top: 0;
     left: 0;
@@ -660,7 +610,6 @@ h3 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     color: #2f2f2f;
-    font-family: MuseoSansCyrl100;
     font-size: 15px;
     padding: 0 15px;
     margin-bottom: 20px; }
@@ -676,7 +625,6 @@ h3 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     color: #2f2f2f;
-    font-family: MuseoSansCyrl100;
     font-size: 15px;
     padding: 15px;
     margin-bottom: 20px; }
@@ -690,7 +638,6 @@ h3 {
     -webkit-border-radius: 40px;
             border-radius: 40px;
     font-size: 18px;
-    font-family: MuseoSansCyrl100;
     color: #2f2f2f; }
 
 .left_widget_vk {
@@ -705,11 +652,9 @@ h3 {
   border-top: 1px solid #AFB9C1; }
 
 .copy {
-  font-family: MuseoSansCyrl300;
   font-size: 12px; }
 
 .footer_adress {
-  font-family: MuseoSansCyrl100;
   font-size: 12px;
   margin-left: 45px;
   padding-left: 20px;
@@ -719,18 +664,15 @@ h3 {
   overflow: hidden; }
 
 .footer_phone {
-  font-family: MuseoSansCyrl100;
   font-size: 18px;
   padding-left: 20px;
   margin-left: 100px;
   background: url("../img/top_icon_phone.png") no-repeat left center; }
   .footer_phone span {
-    font-size: 12px;
-    font-family: MuseoSansCyrl500; }
+    font-size: 12px; }
 
 .footer_mail a {
   color: #324d63;
-  font-family: MuseoSansCyrl100;
   font-size: 14px;
   text-decoration: underline;
   padding-left: 20px;
@@ -747,7 +689,6 @@ h3 {
   .content .bread li {
     float: left;
     font-size: 14px;
-    font-family: MuseoSansCyrl100;
     margin-bottom: 10px;
     margin: 0;
     padding: 0;
@@ -764,7 +705,6 @@ h3 {
       .content .bread li a:after {
         line-height: 1;
         font-size: 14px;
-        font-family: MuseoSansCyrl100;
         content: "/";
         color: #000;
         float: right;
@@ -789,7 +729,6 @@ h3 {
     content: counter(num) " ";
     counter-increment: num;
     color: #fffd26;
-    font-family: MuseoSansCyrl900;
     font-size: 14px;
     width: 21px;
     height: 21px;
@@ -816,7 +755,6 @@ h3 {
 blockquote {
   background-color: #70b9e6;
   color: #000;
-  font-family: MuseoSansCyrl100;
   font-size: 15px;
   line-height: 21px;
   padding: 12px 25px;
@@ -833,7 +771,6 @@ blockquote {
     background-image: url("../img/left_quote.png"); }
   blockquote b {
     color: #fff;
-    font-family: MuseoSansCyrl100;
     font-size: 15px; }
   blockquote:after {
     margin-bottom: 15px;
@@ -871,7 +808,6 @@ blockquote {
           box-sizing: border-box; }
   .tags a {
     color: #36a6cf;
-    font-family: MuseoSansCyrl700;
     font-size: 14px;
     text-decoration: underline;
     margin-right: 30px;
