@@ -471,8 +471,7 @@ b, strong {
   max-width: 1600px;
   background: url("../img/footer.jpg") repeat-y 0 0;
   overflow: hidden;
-  margin: auto;
-  min-height: 504px; }
+  margin: auto; }
 
 .bot-mnu1 {
   padding-top: 25px;
@@ -540,6 +539,9 @@ b, strong {
           box-sizing: border-box;
   margin-top: 60px; }
 
+.first-block {
+  overflow: hidden; }
+
 .bot-adress, .bot-phones, .bot-mail a {
   color: white;
   font-family: "Myriad Pro";
@@ -553,11 +555,29 @@ b, strong {
 
 .bot-phones {
   margin-left: 24px; }
+  .bot-phones div {
+    padding-left: 50px; }
   .bot-phones span {
     display: inline; }
 
 .bot-mail a {
   margin-left: 13px; }
+
+.bot-social {
+  float: right; }
+
+.second-block {
+  margin-top: 10px;
+  overflow: hidden; }
+
+.copy {
+  color: white;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  font-weight: 400; }
+
+.logo-copy {
+  float: left; }
 
 .bot-partners {
   float: right; }
