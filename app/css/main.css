@@ -220,47 +220,21 @@ b, strong {
   background-color: #324D63;
   background-image: none; }
 
-.top_contacts {
-  margin-top: 30px; }
-
-.top_phone {
-  color: #000;
-  font-family: MuseoSansCyrl700;
-  font-size: 18px;
-  text-transform: uppercase;
-  background: url("../img/top_icon_phone.png") no-repeat left center;
-  padding-left: 22px;
-  margin-left: 60px;
+.herbs {
+  width: 50%;
   float: left;
-  margin-right: 50px;
-  margin-top: 7px; }
-
-.top_mail {
+  padding-left: 10px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  float: left;
-  margin-right: 60px;
-  margin-top: 7px; }
-  .top_mail a {
-    color: #324d63;
-    font-family: MuseoSansCyrl700;
-    font-size: 14px;
-    text-decoration: underline;
-    float: left;
-    background: url("../img/top_icon_mail.png") no-repeat left center;
-    padding-left: 22px; }
+          box-sizing: border-box; }
+  .herbs img {
+    margin-right: 14px; }
 
-.top_adress {
+.col-contacts {
+  margin-top: 20px; }
+
+.top_contacts {
   float: left;
-  background: url("../img/top_icon_adress.png") no-repeat left center;
-  padding-left: 22px;
-  color: #000;
-  font-family: MuseoSansCyrl500;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.2;
-  min-height: 16px;
-  width: 205px; }
+  width: 50%; }
 
 .nopadding {
   padding: 0 !important; }
