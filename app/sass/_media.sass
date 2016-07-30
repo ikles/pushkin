@@ -2,6 +2,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) 
+	.top_mnu li::before 
+		display: none	
+
 	.menu_wrap
 		overflow: visible
 
@@ -203,83 +206,59 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) 	
-	.left_mnu 
-		li 
-			border-bottom: 1px solid #ccc
+	.bot-mnu2 li
+		width: 45%
 
-	.footer_mail 
-		margin-bottom: 15px
+	.main_content
+		padding-bottom: 0
 
-	.top_contacts 
-		margin-top: 0px
-
-	.toggle-mnu 
-		margin-top: 25px
-
-	.slider-arrow 
-		display: none
-	
-	h1 
-		margin-bottom: 15px
-	.footer_adress, .footer_phone, .footer_mail 
-		text-align: center
-		background: none
-	.footer_adress, .footer_phone 
-		margin-bottom: 10px
-	.last_news 
-		display: none
-		
-	.col-logo 
-		text-align: center
-		
-	.top 
-		height: auto 
-		margin-bottom: 0
-		
-	.top_adress 
-		margin-bottom: 20px
-		padding-left: 0
-		background: none
-		text-align: center
-			
-	.logo 
-		width: 100% 
-		display: block
-		border-radius:  0 0 5px 5px
-		margin: auto
-		margin-top: 10px
-		img 
-			width: auto	
-	
-	.left_widget_vk 
-		display: none
-		
-	.top_slider_wrap 
-		overflow: hidden
-	
-	.col-mnu 
-		position: absolute
-		top: 0
-		right: 0
-		z-index: 100
+	.footer
 		margin-top: 0
 
-	.top_contacts
-		text-align: center
-		> div 
-			display: inline-block
-			float: none
-			margin-top: 5px
+	.content
+		margin-bottom: 0px
+
+	.content::after
+		display: none
+
+	.hot li
+		width: 48%
+
+	.news
+		width: 100%
+
+	.slider
+		width: 100%
 		
-		.top_mail 
-			padding-top: 5px
-			margin-bottom: 5px
-			
+	.main_content 
+		width: 100%
+	
+
+	.top_mail 
+		font-size: 22px	
+
+	.top_phone span 
+		font-size: 35px
+	
+
+	.top_slider_wrap 
+		height: 280px
+	
+	.top
+		width: 70%
+		
+	.menu_wrap 
+		width: 30%
+		
+	.col-mnu
+		margin-top: 12px
+		
+	.toggle-mnu 
+		margin-right: 0		
 		
 @media only screen and (max-width : 640px) 
-	.slider 
-		img 
-			display: none
+	.slider
+		display: none
 		
 @media only screen and (max-width : 620px) 
 	.top_contacts
@@ -287,6 +266,19 @@
 			margin-top: 15px
 	
 @media only screen and (max-width : 570px) 	
+	.bot-adress, .bot-phones, .bot-mail
+		width: 100%
+		text-align: center
+		margin-bottom: 10px
+
+	.bot-mnu2 li
+		width: 100%
+		margin-right: 0		
+
+	.bot-mnu1 a
+		background-size:  50px
+		padding-left: 70px
+
 	.top_mail, .top_phone, .top_adress
 		margin-top: 0
 		margin-bottom: 10px
@@ -302,6 +294,23 @@
 	
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) 
+	.bot-mnu1
+		a
+			background-size:  45px
+			padding-left: 65px
+			font-size: 18px
+			width: auto
+		li
+			width: 100%
+			margin-right: 0
+		
+
+	.hot li
+		width: 90%
+		margin-right: 5%
+		margin-left: 5%
+		
+
 	.slider_text 
 		top: 40px
 		padding-right: 20px
