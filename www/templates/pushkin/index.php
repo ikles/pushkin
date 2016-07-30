@@ -36,16 +36,6 @@ $app = JFactory::getApplication();
 							<a href="#" class="toggle-mnu"><span></span></a>
 						</div>
 						<jdoc:include type="modules" name="top_mnu" style="xhtml" />
-						<!--div class="top_mnu main-mnu">
-							<ul>
-								<li class="active"><a href="#">Санкт-Петербург</a></li>
-								<li><a href="#">Екатеринбург</a></li>
-								<li><a href="#">Зарубежные туры</a></li>
-								<li><a href="#">Российские туры</a></li>
-								<li><a href="#">Доп. услуги</a></li>
-								<li><a href="#">О нас</a></li>							
-							</ul>
-						</div-->
 					</div>
 				</div>
 			</div>

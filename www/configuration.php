@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = 'Сайт закрыт на техническое обслуживание.<br />Пожалуйста, зайдите позже.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'Пушкин';
+	public $sitename = 'Марципан-кафе';
 	public $editor = 'none';
 	public $captcha = '0';
 	public $list_limit = '20';
@@ -16,9 +16,9 @@ class JConfig {
 	public $user = 'root';
 	public $password = '';
 	public $db = 'pushkin';
-	public $dbprefix = 'vc2ju_';
+	public $dbprefix = 'iw0sl_';
 	public $live_site = '';
-	public $secret = '1gc3h2XdDFajjgT8';
+	public $secret = 'IwZW39K5giDkPsGu';
 	public $gzip = '0';
 	public $error_reporting = 'default';
 	public $helpurl = 'https://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
@@ -32,7 +32,7 @@ class JConfig {
 	public $mailonline = '1';
 	public $mailer = 'mail';
 	public $mailfrom = 'membship@ya.ru';
-	public $fromname = 'Пушкин';
+	public $fromname = 'Енот';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
 	public $smtpuser = '';
@@ -54,8 +54,8 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-	public $log_path = 'Z:\\home\\pushkin\\www/logs';
-	public $tmp_path = 'Z:\\home\\pushkin\\www/tmp';
+	public $log_path = 'Z:\\home\\enot\\www/logs';
+	public $tmp_path = 'Z:\\home\\enot\\www/tmp';
 	public $lifetime = '15';
 	public $session_handler = 'database';
 	public $memcache_persist = '1';
