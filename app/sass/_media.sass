@@ -2,58 +2,37 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) 
-	.top_slider_wrap
-		border-bottom: 2px solid#293641 
-		padding-bottom: 5px
+	.top_slider_wrap 
+		position: relative
+	
 
-	.content_banner, .min_banner
-		img 
-			width: 100%
-		
-
-	.left_widget_vk > img 
+	.main-wrap 
 		width: 100%
-
-	.col-mnu 
-		position: absolute
+		padding: 0 30px
+		//position: absolute
 		top: 0
 		right: 0
-		z-index: 100
-		margin-top: 0
 	
-	.top_adress, .top_mail, .top_phone
-		//float: left !important
-		margin-left: 0
-		margin-right: 15px !important
-	
-	.top_adress 
-		width: auto
-		margin-top: 10px	
-	
-	.top_contacts 
-		margin-top: 23px
-	
-	.gray_line 
+	.herbs 
 		display: none
-	
-	.tags 
-		position: relative
-		margin-bottom: 15px
-		a 
-			margin-bottom: 10px
 		
-	.all_tags 
-		position: absolute
-		right: 0
-		top: 23px
-		padding-left: 15px
-		background-color: #FFF 
-	
-	.imgs 
-		img 
+	.slider 
+		img
 			width: 100%
-			height: 227px
-	 		
+	
+	.content::after 
+		background-size: 91.5%	
+		left: -42px
+
+	.hot
+		li
+			width: 19%
+			height: auto
+			margin-right: 5px
+			img
+				width: 100%
+				height: 100%
+			
 	.main-mnu
 		display: none
 		float: right
@@ -86,77 +65,9 @@
 		a:hover, li.active a 
 			border: none
 			
-	.top_phone 
-		margin-right: 10px
-		float: right
-		margin-right: 0
-	 
-	.top_mail 
-		float: right
-		margin-right: 10px
-		min-height: 18px
-		
-	.top_adress 
-		float: right
-		text-align: left
-	
-	.col-mnu 
-		float: right !important
-	
-	.col-contacts 
-		float: left !important
-	
-	.content, .left_mnu, .left_form
-		width: 100%
-			
-	.footer_adress, .footer_phone 
-		margin-left: 0
-		
-	.footer_adress 
-		padding-left: 25px
-	
-	.top_mnu li:last-child 
-		margin-right: 0
-	
-	.banner 
-		width: 100%
-		height: auto
-	
-	.img_block_img 
-		display: inline
-		width: auto
-		margin-right: 20px
-		margin-bottom: 5px
-	
-	.img_block_text 
-		float: none
-		width: auto
-	
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) 
-	.top_adress 
-		text-align: right
-		background: none
-		padding-left: 0
-	
-	.logo 
-		img 
-			width: 100%
-
-	.content 
-		ul 
-			margin-bottom: 20px
-
-	.lists 
-		margin-bottom: 10px
-
-	.imgs 
-		margin-bottom: 20px
-		img 
-			width: auto
-			height: auto
-			float: left
-			margin-bottom: 10px !important
+	/**/
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) 	
 	.left_mnu 
