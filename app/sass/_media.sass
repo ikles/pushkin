@@ -2,16 +2,37 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) 
+	.menu_wrap
+		overflow: visible
+
+	.top
+		width: 70%
+		float: left
+		
+	.top_contacts 
+			width: 100%
+	
+	.menu_wrap
+		width: 30%
+		float: left
+
 	.top_slider_wrap 
 		position: relative
+		min-height: 137px
+		background-image: linear-gradient(to top, rgba(139, 138, 138, 0.38) 0%, rgba(227, 227, 227, 0.38) 100%)
 	
 
 	.main-wrap 
 		width: 100%
-		padding: 0 30px
 		//position: absolute
 		top: 0
 		right: 0
+		
+	.slider
+		width: 932px
+		
+	.main_content
+		width: 932px
 	
 	.herbs 
 		display: none
@@ -26,7 +47,7 @@
 
 	.hot
 		li
-			width: 19%
+			width: 19.3%
 			height: auto
 			margin-right: 5px
 			img
@@ -67,7 +88,119 @@
 			
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) 
-	/**/
+	.content::after 
+		background-size: 72%
+		left: -36px
+	
+	.bot-mnu1
+		padding-bottom: 0
+		li 
+			margin-bottom: 25px
+			width: 50%
+
+	.bot-adress, .bot-phones, .bot-mail 
+		text-align: right
+		font-size: 16px
+		margin: 0
+	
+	.bot-adress 
+		text-align: left	
+
+	.bot-mnu2 
+		overflow: hidden
+		li
+			width: 30%
+			margin-right: 3%
+			margin-bottom: 0
+			font-size: 15px
+		
+	.footer2
+		margin-top: 30px
+		width: calc(100% - 60px)		
+
+	.bot-adress
+		width: 33%
+		
+	.bot-phones 
+		width: 33%
+		margin: 0
+		text-align: right
+		
+	.bot-mail 
+		width: 33%
+		float: right
+		text-align: right
+		
+	.bot-mail 
+		text-align: right
+	
+	.bot-mnu2 li 
+		margin-bottom: 25px
+	
+
+	.footer
+		margin-top: -68px
+		position: relative
+		z-index: 100
+
+	.logo-copy 
+		text-align: center
+		float: none	
+
+	.bot-social 
+		display: none
+	
+	.bot-partners 
+		display: none
+	
+
+	.slider
+		width: 732px
+		
+	.main_content
+		width: 732px
+
+	.slider .slider-text a
+		font-size: 73px
+	.slider-text
+		text-align: right
+	
+	.news a 
+		line-height: 1.2
+	
+	.top
+		width: 85%
+		float: left
+		.w_1200
+			padding-right: 0	
+
+	.hot li
+		width: 32%
+		margin-bottom: 5px
+
+	.menu_wrap
+		width: 15%
+		float: left
+		
+	.bot-mail
+		a
+			width: 100%
+			float: right
+		
+	.bot-adress, .bot-phones, .bot-mail a
+		text-align: right
+
+	.bot-adress 
+		text-align: left
+	
+	.bot-phones 
+		text-align: right
+		
+	.bot-mail a 
+		text-align: right
+	
+	
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) 	
 	.left_mnu 
