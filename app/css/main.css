@@ -820,6 +820,12 @@ blockquote {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .hot {
+    margin-top: 32px;
+    overflow: hidden;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .bot-mnu2 li {
     width: 45%; }
   .main_content {
