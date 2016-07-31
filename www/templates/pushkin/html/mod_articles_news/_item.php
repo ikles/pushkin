@@ -8,18 +8,18 @@
  */
 
 defined('_JEXEC') or die;
-
 $item_heading = $params->get('item_heading', 'h4');
 ?>
+<ul>
+<li>
 <?php if ($params->get('item_title')) : ?>
-
 	<<?php echo $item_heading; ?> class="newsflash-title<?php echo $params->get('moduleclass_sfx'); ?>">
-	<?php if ($params->get('link_titles') && $item->link != '') : ?>
-		<a href="<?php echo $item->link; ?>">
-			<?php echo $item->title;?>
-		</a>
-		<?php $images = json_decode($item->images); ?>
-<img src="<?php echo htmlspecialchars($images->image_intro); ?>" alt="<?php echo htmlspecialchars($images->image_intro_alt); ?>"/>
+	<?php if ($params->get('link_titles') && $item->link != '') : ?>			
+			<a href="<?php echo $item->link; ?>">			
+				<?php $images = json_decode($item->images); ?>
+				<img src="<?php echo htmlspecialchars($images->image_intro); ?>" alt="<?php echo htmlspecialchars($images->image_intro_alt); ?>"/>
+				<span><?php echo $item->title;?></span>
+			</a>			</li></ul>
 	<?php else : ?>
 		<?php echo $item->title; ?>
 	<?php endif; ?>
@@ -33,7 +33,7 @@ $item_heading = $params->get('item_heading', 'h4');
 
 <?php echo $item->beforeDisplayContent; ?>
 
-<?php echo $item->introtext; ?>
+<!--?php echo $item->introtext; ?-->
 
 <?php if (isset($item->link) && $item->readmore != 0 && $params->get('readmore')) : ?>
 	<?php echo '<a class="readmore" href="' . $item->link . '">' . $item->linkText . '</a>'; ?>

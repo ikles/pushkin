@@ -305,7 +305,7 @@ b, strong {
     font-size: 39px;
     margin-bottom: 20px; }
 
-.module_partners {
+.moduletable.module_partners {
   position: relative;
   z-index: 10; }
 
@@ -361,29 +361,29 @@ b, strong {
   width: 50%;
   float: left; }
 
-.hot {
+.moduletable.hot {
   margin-top: 32px;
   overflow: hidden;
   padding: 0 7.5px; }
-  .hot ul {
+  .moduletable.hot ul {
     display: block;
     text-align: center; }
-  .hot li {
+  .moduletable.hot li {
     display: inline-block;
     width: 225px;
     height: 225px;
     margin-right: 21px; }
-    .hot li:last-child {
+    .moduletable.hot li:last-child {
       margin-right: 0; }
-    .hot li img {
+    .moduletable.hot li img {
       width: 100%;
       height: auto; }
-  .hot a {
+  .moduletable.hot a {
     display: block;
     position: relative;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-    .hot a span {
+    .moduletable.hot a span {
       display: block;
       position: absolute;
       bottom: 0;
@@ -399,9 +399,9 @@ b, strong {
       text-decoration: underline;
       line-height: 1.2; 
       text-align: left;}
-      .hot a span:hover {
+      .moduletable.hot a span:hover {
         text-decoration: none; }
-  .hot h2 {
+  .moduletable.hot h2 {
     font-size: 28px;
     color: #838383;
     display: inline-block;
@@ -561,29 +561,33 @@ b, strong {
 .bot-partners {
   float: right; }
 
-.module {
+.moduletable.module {
   overflow: hidden;
   padding-top: 65px;
   font-size: 17px;
   margin-bottom: 50px; }
-  .module ul {
+  .moduletable.module ul {
     padding-left: 15px; }
-    .module ul li {
+    .moduletable.module ul li {
       margin-bottom: 7px;
       color: #00396f; }
-  .module h1 {
+  .moduletable.module h1 {
     font-size: 28px;
     color: #00396f;
     margin-bottom: 20px; }
 
-.module_partners h3 {
+.moduletable.module_partners h3 {
   color: #00396f;
   font-size: 17px;
   margin-bottom: 10px;
   padding-left: 30px; }
 
-.module_partners img {
+.moduletable.module_partners img {
   margin-right: 5px; }
+
+.custom.module_partners.w_1200 {
+  padding: 0 !important;
+}
 
 .lists {
   margin-bottom: 40px;
@@ -714,11 +718,11 @@ blockquote {
   .content::after {
     background-size: 91.5%;
     left: -42px; }
-  .hot li {
+  .moduletable.hot li {
     width: 20%;
     height: auto;
     margin-right: 35px; }
-    .hot li img {
+    .moduletable.hot li img {
       width: 100%;
       height: 100%; }
   .main-mnu {
@@ -825,11 +829,11 @@ blockquote {
     float: left; }
     .top .w_1200 {
       padding-right: 0; }
-  .hot li {
+  .moduletable.hot li {
     width: 46%;
     margin-right: 0;
     margin-bottom: 10px; }
-    .hot li:nth-child(2n-1) {
+    .moduletable.hot li:nth-child(2n-1) {
       margin-right: 10px; }
   .menu_wrap {
     width: 15%;
@@ -848,7 +852,7 @@ blockquote {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
-  .hot {
+  .moduletable.hot {
     margin-top: 32px;
     overflow: hidden;
     padding: 0 10px;
@@ -864,7 +868,7 @@ blockquote {
     margin-bottom: 0px; }
   .content::after {
     display: none; }
-  .hot li {
+  .moduletable.hot li {
     width: 48%; }
   .moduletable.news {
     width: 100%; }
@@ -930,11 +934,11 @@ blockquote {
   .bot-mnu1 li {
     width: 100%;
     margin-right: 0; }
-  .hot li {
+  .moduletable.hot li {
     width: 90%;
     margin-right: 0;
     margin-left: 0; }
-    .hot li:nth-child(2n-1) {
+    .moduletable.hot li:nth-child(2n-1) {
       margin-right: 0; }
   .slider_text {
     top: 40px;

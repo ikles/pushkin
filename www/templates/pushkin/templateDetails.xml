@@ -27,5 +27,7 @@
 		<position>top_mnu</position>
 		<position>slider</position>
 		<position>news</position>
+		<position>module</position>
+		<position>module_partners</position>
 	</positions>
 </extension>
