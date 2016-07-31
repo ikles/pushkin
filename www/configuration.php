@@ -4,7 +4,7 @@ class JConfig {
 	public $offline_message = 'Сайт закрыт на техническое обслуживание.<br />Пожалуйста, зайдите позже.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
-	public $sitename = 'Марципан-кафе';
+	public $sitename = 'Пушкин';
 	public $editor = 'none';
 	public $captcha = '0';
 	public $list_limit = '20';

@@ -25,5 +25,7 @@
 		<position>herbs</position>
 		<position>top_contacts</position>
 		<position>top_mnu</position>
+		<position>slider</position>
+		<position>news</position>
 	</positions>
 </extension>
